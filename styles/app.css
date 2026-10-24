@@ -1,0 +1,552 @@
+/* Estilos compartidos recuperados del prototipo original. */
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0
+}
+
+.s {
+    width: 1200px;
+    height: 780px;
+    overflow: hidden;
+    display: flex;
+    font: 14px/1.45 'Public Sans', system-ui, sans-serif;
+    color: #12262B;
+    background: #EEF2F1
+}
+
+.sb {
+    width: 216px;
+    background: #0B3F49;
+    padding: 20px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: none
+}
+
+.sb b {
+    font-size: 16px;
+    color: #fff;
+    padding: 4px 10px 18px
+}
+
+.sb a {
+    padding: 10px;
+    border-radius: 6px;
+    color: #D7E8EA;
+    text-decoration: none;
+    min-height: 44px;
+    display: flex;
+    align-items: center
+}
+
+.sb a.on {
+    background: #fff;
+    color: #0B3F49;
+    font-weight: 600
+}
+
+.sb small {
+    margin-top: auto;
+    padding: 10px;
+    color: #B5CFD2;
+    font-size: 12px
+}
+
+.m {
+    flex: 1;
+    padding: 24px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 0
+}
+
+h1 {
+    margin: 0;
+    font-size: 22px
+}
+
+h2 {
+    margin: 0;
+    font-size: 15px
+}
+
+p {
+    margin: 0
+}
+
+.p {
+    background: #fff;
+    border: 1px solid #D5DEDC;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px
+}
+
+.r {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start
+}
+
+.f {
+    flex: 1;
+    min-width: 0
+}
+
+.tb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px
+}
+
+.g2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-weight: 600;
+    font-size: 13px
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #6F8789;
+    border-radius: 6px;
+    padding: 0 10px;
+    font: inherit;
+    font-weight: 400;
+    background: #fff;
+    color: inherit
+}
+
+textarea {
+    height: 64px;
+    padding: 8px 10px
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #E0A400;
+    outline-offset: 2px
+}
+
+.b {
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 6px;
+    border: 1px solid #0B5563;
+    background: #0B5563;
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    white-space: nowrap
+}
+
+.b2 {
+    background: #fff;
+    color: #0B5563
+}
+
+.bd {
+    background: #A3262F;
+    border-color: #A3262F
+}
+
+.b:disabled {
+    background: #E3E8E7;
+    border-color: #C5D0CE;
+    color: #5A6B6E
+}
+
+.sm {
+    height: 32px;
+    padding: 0 10px;
+    font-size: 13px
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse
+}
+
+th,
+td {
+    padding: 9px 8px;
+    border-bottom: 1px solid #E3EAE8;
+    text-align: left;
+    font-size: 13px;
+    vertical-align: middle
+}
+
+th {
+    color: #3F565A;
+    font-weight: 600;
+    font-size: 12px
+}
+
+.ch {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 99px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap
+}
+
+.e1 {
+    background: #E6ECF8;
+    color: #2B4590
+}
+
+.e2 {
+    background: #DDF1E8;
+    color: #0A5A41
+}
+
+.e3 {
+    background: #FBEBC8;
+    color: #6E4700
+}
+
+.e4 {
+    background: #EBE1F6;
+    color: #5B2F8F
+}
+
+.e5 {
+    background: #E3E8E7;
+    color: #34413F
+}
+
+.e6 {
+    background: #F8E0E1;
+    color: #8E1F27
+}
+
+.e7 {
+    background: #FFE9D6;
+    color: #7C3300
+}
+
+.al {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid;
+    font-size: 13px
+}
+
+.w {
+    background: #FFF6DD;
+    border-color: #D9A400;
+    color: #5E4300
+}
+
+.er {
+    background: #FDECEC;
+    border-color: #C9444D;
+    color: #7B1B22
+}
+
+.ok {
+    background: #E4F4EC;
+    border-color: #2E8B63;
+    color: #0A4D36
+}
+
+.in {
+    background: #E8F1FA;
+    border-color: #4A86BF;
+    color: #18416A
+}
+
+.mut {
+    color: #3F565A;
+    font-size: 13px
+}
+
+.err {
+    color: #A3262F;
+    font-size: 12px;
+    font-weight: 400
+}
+
+.sl {
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid #6F8789;
+    background: #fff;
+    font: inherit;
+    color: #12262B
+}
+
+.sl.x {
+    background: #E3E8E7;
+    border-style: dashed;
+    color: #4A5C5F;
+    text-decoration: line-through
+}
+
+.sl.on {
+    background: #0B5563;
+    border-color: #0B5563;
+    color: #fff;
+    font-weight: 600
+}
+
+.sg {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px
+}
+
+.bar {
+    height: 18px;
+    border-radius: 3px;
+    background: #0B5563
+}
+
+.tab {
+    height: 40px;
+    padding: 0 14px;
+    border: 0;
+    border-bottom: 3px solid transparent;
+    background: none;
+    font: inherit;
+    color: #3F565A
+}
+
+.tab.on {
+    border-color: #0B5563;
+    color: #0B3F49;
+    font-weight: 700
+}
+
+.sk {
+    height: 12px;
+    border-radius: 4px;
+    background: #DCE5E3
+}
+
+.bx {
+    border: 1.5px solid #0B5563;
+    border-radius: 6px;
+    padding: 8px 10px;
+    background: #fff;
+    font-size: 13px
+}
+
+
+
+/* Contenedor para navegar entre módulos sin alterar el lienzo original de 1200 × 780 px. */
+:root {
+     color-scheme: light;
+     background: #f5f4ef;
+    
+}
+
+body {
+     min-width: 320px;
+     background: #f5f4ef;
+     color: #12262b;
+     font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+    
+}
+
+.application-shell {
+     width: min(100%, 1320px);
+     margin: 0 auto;
+     padding: 32px 24px 48px;
+    
+}
+
+.application-header {
+     margin-bottom: 24px;
+    
+}
+
+.application-header h1 {
+     margin: 0;
+     color: #0b3f49;
+     font-size: clamp(1.75rem, 4vw, 2.5rem);
+     line-height: 1.15;
+    
+}
+
+.application-header p {
+     max-width: 62ch;
+     margin: 8px 0 0;
+     color: #3f565a;
+    
+}
+
+.eyebrow {
+     margin: 0 0 6px !important;
+     color: #0b5563 !important;
+     font-size: 0.78rem;
+     font-weight: 700;
+     letter-spacing: 0.08em;
+     text-transform: uppercase;
+    
+}
+
+
+
+/* Los controles externos no comparten los estilos de los formularios del prototipo. */
+.screen-controls {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     gap: 10px;
+     margin-bottom: 14px;
+    
+}
+
+.screen-controls label {
+     display: block;
+     color: #12262b;
+     font-size: 0.9rem;
+     font-weight: 700;
+    
+}
+
+.screen-controls select {
+     width: min(100%, 360px);
+     height: 42px;
+     padding: 0 12px;
+     border: 1px solid #6f8789;
+     border-radius: 6px;
+     background: #fff;
+     color: #12262b;
+     font: inherit;
+    
+}
+
+.control-button,
+.navigation-button {
+     min-height: 40px;
+     border: 1px solid #0b5563;
+     border-radius: 6px;
+     background: #fff;
+     color: #0b5563;
+     cursor: pointer;
+     font: inherit;
+     font-weight: 650;
+    
+}
+
+.control-button {
+     padding: 0 16px;
+    
+}
+
+.control-button:hover,
+.control-button[aria-pressed="true"] {
+     background: #e4f4ec;
+    
+}
+
+.screen-navigation {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 8px;
+     margin-bottom: 24px;
+    
+}
+
+.navigation-button {
+     padding: 7px 10px;
+     font-size: 0.85rem;
+    
+}
+
+.navigation-button:hover,
+.navigation-button.is-active {
+     background: #0b5563;
+     color: #fff;
+    
+}
+
+.control-button:focus-visible,
+.navigation-button:focus-visible,
+.screen-controls select:focus-visible {
+     outline: 3px solid #e0a400;
+     outline-offset: 2px;
+    
+}
+
+.screen-output {
+     display: grid;
+     gap: 32px;
+    
+}
+
+.screen-card {
+     display: grid;
+     gap: 10px;
+    
+}
+
+.screen-card>h2 {
+     margin: 0;
+     color: #3f565a;
+     font-size: 0.95rem;
+    
+}
+
+
+
+/* El desbordamiento horizontal conserva las proporciones del prototipo en pantallas pequeñas. */
+.screen-viewport {
+     overflow: auto;
+     max-width: 100%;
+     border: 1px solid #d5dedc;
+     background: #fff;
+     box-shadow: 0 1px 3px rgb(0 0 0 / 12%);
+    
+}
+
+.screen-viewport>.s {
+     flex: none;
+    
+}
+
+@media (max-width: 640px) {
+     .application-shell {
+         padding: 24px 16px 32px;
+        
+    }
+
+     .screen-controls {
+         align-items: stretch;
+         flex-direction: column;
+        
+    }
+
+     .screen-controls select,
+     .control-button {
+         width: 100%;
+        
+    }
+
+    
+}
+
